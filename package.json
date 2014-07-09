@@ -1,0 +1,14 @@
+{
+  "name": "mikevalstar_com2",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "description": "Mikevalstar.com static site generator",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}
