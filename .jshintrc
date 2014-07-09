@@ -1,0 +1,26 @@
+{
+    "node" : true,
+    "browser" : true,
+    "jquery" : true,
+
+    "curly": false,
+    "eqeqeq": true,
+    "newcap": true,
+    "noarg": true,
+    "noempty": true,
+    "plusplus": false,
+    "undef": true,
+    "unused": true,
+
+    "debug": false,
+    "devel": false,
+    "laxcomma": true,
+    "laxbreak":true,
+    "immed": true,
+    "nonew": false,
+
+    "strict": true,
+    "white": true,
+
+    "-W015": true
+}
