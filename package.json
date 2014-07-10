@@ -17,6 +17,8 @@
     "metalsmith-markdown": "^0.2.1",
     "grunt-execute": "^0.2.2",
     "metalsmith-templates": "^0.5.1",
-    "handlebars": "^2.0.0-alpha.4"
+    "handlebars": "^2.0.0-alpha.4",
+    "metalsmith-collections": "^0.4.1",
+    "metalsmith-permalinks": "^0.3.2"
   }
 }
