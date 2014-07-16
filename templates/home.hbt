@@ -8,13 +8,25 @@
     <div class="container">
         <article>
             <ul>
-                {{#each collections.blog}}
+                {{#each (limit collections.blog this.pagination.end this.pagination.start)}}
                     <li>
                         <h3><a href="{{this.path}}">{{this.title}}</a></h3>
                         <article>{{this.short}}</article>
                     </li>
                 {{/each}}
             </ul>
+            
+            {{#if this.pagination}}
+                <nav class="pagination">
+                    {{#if this.pagination.prev}}
+                        <a href="/{{this.pagination.prev.path}}">&lt; Prev</a>
+                    {{/if}}
+
+                    {{#if this.pagination.next}}
+                        <a href="/{{this.pagination.next.path}}">Next &gt;</a>
+                    {{/if}}
+                </nav>
+            {{/if}}
         </article>
     </div>
 </body>
