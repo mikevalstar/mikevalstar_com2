@@ -66,7 +66,7 @@ module.exports = function (grunt) {
 
             metalsmith: {
                 files: ['src/**/*', 'templates/**/*'],
-                tasks: ['execute']
+                tasks: ['execute', 'less', 'uglify']
             }
 
         },
@@ -89,6 +89,6 @@ module.exports = function (grunt) {
 
     // Register tasks
     grunt.registerTask('default', [
-        'clean', 'execute'
+        'clean', 'execute', 'less', 'uglify'
     ]);
 };
