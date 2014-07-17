@@ -50,7 +50,11 @@ Metalsmith(__dirname)
         perPage: 2,
         path: "blog/page"
     }))
-    .use(markdown())
+    .use(markdown({
+        smartypants: true,
+        gfm: true,
+        smartLists: true
+    }))
     .use(permalinks({ pattern: ':collection/:url' }))
     .use(templates('handlebars'))
     .destination('./dist')

@@ -1,10 +1,9 @@
-<nav>
+<nav id="topnav">
     <div class="container">
         <ul>
             <li><div id="logo"><a href="/">Mike Valstar</a></div></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Page</a></li>
-            <li><a href="#">Page 3</a></li>
+            <li><a href="/Projects">Projects</a></li>
+            <li><a href="/About">About</a></li>
         </ul>
     </div>
 </nav>

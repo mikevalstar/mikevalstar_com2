@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {{>head}}
+</head>
+<body>
+    {{>nav}}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                {{{ contents }}}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

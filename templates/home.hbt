@@ -5,6 +5,7 @@
 </head>
 <body>
     {{>nav}}
+    
     <div class="container">
         <article>
             <ul>
@@ -21,7 +22,7 @@
                     {{#if this.pagination.prev}}
                         <a href="/{{this.pagination.prev.path}}">&lt; Prev</a>
                     {{/if}}
-
+                    
                     {{#if this.pagination.next}}
                         <a href="/{{this.pagination.next.path}}">Next &gt;</a>
                     {{/if}}
