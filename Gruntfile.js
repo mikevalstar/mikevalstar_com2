@@ -1,5 +1,6 @@
 'use strict';
 module.exports = function (grunt) {
+
     grunt.initConfig({
 
         connect: {
@@ -8,6 +9,33 @@ module.exports = function (grunt) {
                     port: 4020,
                     base: './dist'
                 }
+            }
+        },
+
+        aws: grunt.file.readJSON('../grunt-aws.json'),
+
+        s3: {
+            options: {
+                key: '<%= aws.key %>',
+                secret: '<%= aws.secret %>',
+                bucket: '<%= aws.bucket %>',
+                access: 'public-read',
+                headers: {
+                    "Cache-Control": "max-age=60000, public",
+                    //"Expires": new Date(Date.now() + 60000).toUTCString()
+                }
+            },
+            live: {
+                upload: [
+                    {
+                        src: 'dist/**/*',
+                        dest: '',
+                        rel: 'dist',
+                        options: {
+                            gzip: true
+                        }
+                    }
+                ]
             }
         },
 
@@ -86,6 +114,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-metalsmith');
     grunt.loadNpmTasks('grunt-execute');
+    grunt.loadNpmTasks('grunt-s3');
 
     // Register tasks
     grunt.registerTask('default', [

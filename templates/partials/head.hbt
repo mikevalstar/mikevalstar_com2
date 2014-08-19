@@ -1,5 +1,5 @@
 <meta charset="UTF-8" />
-<title>{{ title }}</title>
+<title>{{ title }} - mikevalstar.com</title>
 
 <link rel="stylesheet" href="/css/site.css" />
 <script src="//localhost:35729/livereload.js"></script>

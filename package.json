@@ -14,6 +14,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-execute": "^0.2.2",
     "grunt-metalsmith": "0.0.1",
+    "grunt-s3": "^0.2.0-alpha.3",
     "handlebars": "^2.0.0-alpha.4",
     "metalsmith": "^0.8.1",
     "metalsmith-collections": "^0.4.1",
